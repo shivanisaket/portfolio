@@ -1,0 +1,158 @@
+:root {
+  --green: #1fd655;
+  --blue: #e3f2fd;
+  --footer-dark: #222;
+  --text: #222;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--blue);
+  color: var(--text);
+}
+
+header {
+  width: 100%;
+  background: var(--green);
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 56px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  flex: 1;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.author-name {
+  position: absolute;
+  right: 32px;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 180px;
+  height: calc(100% - 56px);
+  background: var(--blue);
+  padding-top: 32px;
+  box-sizing: border-box;
+  border-right: 1px solid #cfd8dc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 24px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.1rem;
+  padding: 8px 24px;
+  display: block;
+  border-radius: 4px;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+  background: #bbdefb;
+}
+
+main {
+  margin-left: 180px;
+  margin-top: 56px;
+  background: var(--white);
+  min-height: calc(100vh - 56px - 56px);
+  padding: 40px 32px 80px 32px;
+  box-sizing: border-box;
+}
+
+main h2 {
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  color: var(--green);
+}
+
+main section {
+  margin-bottom: 32px;
+}
+
+main h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+footer {
+  width: 100%;
+  background: var(--footer-dark);
+  color: var(--white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-content span {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 4px;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  text-decoration: underline;
+}
